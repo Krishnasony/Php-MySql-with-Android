@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.krishanasony.phptest.LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_text"
+        android:text="Login User here"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"/>
+        <EditText
+            android:id="@+id/edittextname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter USername"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"/>
+        <EditText
+            android:id="@+id/edittextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"/>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_marginTop="50dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="login"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:background="@drawable/round_button"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewRegister"
+        android:layout_below="@id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="you haven't account? Click Here to Register"/>
+
+
+</RelativeLayout>
